@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Web UI Server (Port 8088)",
+      "request": "launch",
+      "mainClass": "src.WebServer",
+      "args": ["--port", "8088"],
+      "classPaths": ["bin"]
+    },
+    {
+      "type": "java",
+      "name": "Run Batch Evaluation (CLI)",
+      "request": "launch",
+      "mainClass": "src.App",
+      "classPaths": ["bin"]
+    },
+    {
+      "type": "java",
+      "name": "Run Comparative Benchmark",
+      "request": "launch",
+      "mainClass": "src.App",
+      "args": ["--benchmark"],
+      "classPaths": ["bin"]
+    },
+    {
+      "type": "java",
+      "name": "Run Unit Test Suite",
+      "request": "launch",
+      "mainClass": "src.TestRunner",
+      "classPaths": ["bin"]
+    }
+  ]
+}
